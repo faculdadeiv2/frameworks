@@ -1,0 +1,56 @@
+<form>
+
+  <div>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" [(ngModel)]="nome" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="sobrenome">Sobrenome</label>
+    <input type="text" id="sobrenome" [(ngModel)]="sobrenome" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="email">E-mail</label>
+    <input type="text" id="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="telefone">Telefone</label>
+    <input type="text" id="telefone" [(ngModel)]="telefone" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="cep">CEP</label>
+    <input type="text" (blur)="buscarEndereco(cep)" id="cep" [(ngModel)]="cep" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="rua">Rua</label>
+    <input type="text" id="rua" [(ngModel)]="rua" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="bairro">Bairro</label>
+    <input type="text" id="bairro" [(ngModel)]="bairro" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="cidade">Cidade</label>
+    <input type="text" id="cidade" [(ngModel)]="cidade" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="estado">Estado</label>
+    <input type="text" id="estado" [(ngModel)]="estado" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div>
+    <label for="numero">Número</label>
+    <input type="text" id="numero" [(ngModel)]="numero" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <button type="button" (click)="salvarDados()">
+    Salvar
+  </button>
+</form>

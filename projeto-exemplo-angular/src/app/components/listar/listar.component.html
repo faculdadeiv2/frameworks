@@ -1,0 +1,30 @@
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>E-mail</th>
+      <th>Telefone</th>
+      <th>CEP</th>
+      <th>Rua</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Excluir</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dado of dados; index as i">
+      <td>{{ dado.nome }}</td>
+      <td>{{ dado.sobrenome }}</td>
+      <td>{{ dado.email }}</td>
+      <td>{{ dado.telefone }}</td>
+      <td>{{ dado.cep }}</td>
+      <td>{{ dado.rua }}</td>
+      <td>{{ dado.bairro }}</td>
+      <td>{{ dado.cidade }}</td>
+      <td>{{ dado.estado }}</td>
+      <td (click)="excluirCadastro(i)" class="excluir">X</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,18 @@
+table {
+  margin: auto;
+  margin-top: 16px;
+  text-align: center;
+}
+
+table, th, tr, td {
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+
+th, tr, td {
+  padding: 4px 16px;
+}
+
+.excluir {
+  cursor: pointer;
+}
