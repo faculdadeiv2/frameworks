@@ -9,14 +9,14 @@ function Todo() {
     return (
         <div>
             <h1>Lista de tarefas</h1>
-            <Form handleAddItemToList={handleAddItemToList} /> { /* <------------ */}
+            <Form handleAddItemToList={handleAddItemToList} />
 
             <List itemsList={itemsList} />
         </div>
     );
 
-    function handleAddItemToList(newItem) {   // <------------ 
-        setItemsList([...itemsList, newItem])
+    function handleAddItemToList(newItem) {
+        setItemsList([...itemsList, newItem]);
     }
 }
 
